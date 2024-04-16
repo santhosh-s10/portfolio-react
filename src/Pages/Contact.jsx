@@ -11,8 +11,6 @@ import { FaYoutube } from "react-icons/fa";
 import { AiFillBehanceCircle } from "react-icons/ai";
 import { FaGoogle } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import toparrow from '../assets/toparrow.svg';
-import { FaArrowUpAZ } from "react-icons/fa6";
 import { FaAngleDoubleUp } from "react-icons/fa";
 
 
@@ -83,10 +81,7 @@ export default function Contact() {
                 </div>
 
                 <p className='text-white text-center pt-10'>© 2024 Portfolio Landing Website </p>
-                <FaAngleDoubleUp onClick={scrollToTop} alt="Toparrow" className='w-10 h-10 text-white rounded-full absolute right-10 cursor-pointer animate-pulse'/>
-
-                {/* <img src={toparrow} onClick={scrollToTop} alt="Toparrow" className='w-10 h-10 bg-white rounded-full absolute right-10 cursor-pointer'/> */}
-            
+                <FaAngleDoubleUp onClick={scrollToTop} alt="Toparrow" className='w-10 h-10 text-white rounded-full absolute right-10 cursor-pointer animate-pulse'/>            
 
             </div>
     </div>

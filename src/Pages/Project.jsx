@@ -38,14 +38,6 @@ export default function Project() {
           </div>
           </div>
 
-    {/* <div className='mt-10 p-5 shadow-xl ring-0 m-10 rounded-xl'>
-      <div className=' mt-3 pb-3'>
-      <img src={travelblog} alt="amazon" className='h-64 rounded-md hover:scale-x-110 duration-500' />
-   
-    <p className='text-2xl font-bold pl-10'>PERSONAL TRAVEL BLOG </p>
-    </div>
-    
-    </div> */}
     </div>
     </div>
 

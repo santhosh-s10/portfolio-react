@@ -51,15 +51,6 @@ export default function About() {
         </div>
       </div>
 
-      
-
-{/*       
-
-      <div className='bg-slate-300 w-[600px] text-center pt-28 xl:w-[600px] lg:w-[400px] md:[500px] sm:w-[400px]'>
-      <img src={school} alt="" />
-
-        </div> */}
-
       <div className='bg-green-200'>
       </div>
         </div>
