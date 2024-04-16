@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import img1 from '../assets/img1.svg'
+import profile from '../assets/Photo.png'
 import Contact from './Contact'
 import Project from './Project'
 import Skill from './Skill'

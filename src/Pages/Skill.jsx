@@ -13,9 +13,20 @@ import mongodb from '../assets/mongodb.svg'
 import python from '../assets/Python.svg'
 import c from '../assets/C.svg'
 import java from '../assets/Java.svg'
+import anime from 'animejs/lib/anime.es.js';
 
 
 export default function Skill() {
+  anime({
+    targets: '.staggering-grid-demo .el',
+    scale: [
+      {value: .1, easing: 'easeOutSine', duration: 500},
+      {value: 1, easing: 'easeInOutQuad', duration: 1200}
+    ],
+    delay: anime.stagger(200, {grid: [1,0], from: 'center'}) 
+  });
+
+
   return (
     <div id='skill-id'>
       <div className='flex justify-center pt-10 sm:flex sm:text-center'>
@@ -25,43 +36,43 @@ export default function Skill() {
       <p className='text-xl tracking-widest font-bold pl-10'>USING NOW:</p>
     </div>
 
-    <div className='grid grid-rows-2 grid-cols-4 gap-10 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-col-1'>
-      <div className='flex flex-col'>
+    <div className='staggering-grid-demo grid grid-rows-2 grid-cols-4 gap-10 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-col-1'>
+      <div className='el html-class flex flex-col'>
         <img src={html} alt="Html5" className=' h-20' />
         <p className='text-center pt-3'>HTML5</p>
         </div>
 
-      <div className='flex flex-col'>
+      <div className='el flex flex-col'>
         <img className='h-20' src={css} alt="" />
         <p className='text-center pt-3'>CSS3</p>
       </div>
 
-      <div className='flex flex-col'>
+      <div className='el flex flex-col'>
         <img className='h-20' src={Javascript} alt="" />
          <p className='text-center pt-3'>JAVASCRIPT</p>
       </div>
 
-      <div className='flex flex-col'>
+      <div className='el flex flex-col'>
         <img className='h-20' src={react} alt="" /> 
         <p className='text-center pt-3'>REACT</p>
       </div>
 
-      <div className='flex flex-col'>
-        <img className='h-20' src={tailwind} alt="" />
+      <div className='el flex flex-col'>
+        <img className='h-20' src={tailwind} alt="" /> 
          <p className='text-center pt-3'>TAILWIND CSS</p>
       </div>
 
-      <div className='flex flex-col'>
-        <img className='h-20 animate-bounce' src={figma} alt="" /> 
+      <div className='el flex flex-col'>
+        <img className='h-20' src={figma} alt="" /> 
         <p className='text-center pt-3'>FIGMA</p>
       </div>
 
-      <div className='flex flex-col'>
+      <div className='el flex flex-col'>
         <img className='h-20' src={bootstrap} alt="" />
          <p className='text-center pt-3'>BOOTSTRAP</p>
       </div>
 
-      <div className='flex flex-col'>
+      <div className='el flex flex-col'>
         <img className='h-20' src={flutter} alt="" />
          <p className='text-center pt-3'>FLUTTER</p>
       </div>
@@ -81,7 +92,7 @@ export default function Skill() {
         </div>
 
         <div className=' flex flex-col'>
-        <img src={mongodb} alt="Html5" className=' h-20 animate-pulse' />
+        <img src={mongodb} alt="Html5" className=' h-20' />
         <p className='text-center pt-5'>MONGO DB</p>
         </div>
 
@@ -108,7 +119,7 @@ export default function Skill() {
         <p className='text-center pt-5'>C</p>
         </div>
         <div className=' flex flex-col'>
-        <img src={java} alt="Html5" className=' h-20 animate-bounce' />
+        <img src={java} alt="Html5" className=' h-20' />
         <p className='text-center pt-5'>JAVA</p>
         </div>
     </div>
