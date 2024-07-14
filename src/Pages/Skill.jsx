@@ -1,7 +1,7 @@
 import React from 'react'
 import html from '../assets/Html.svg'
 import css from '../assets/CSS.svg'
-import figma from '../assets/figma.svg'
+import firebase from '../assets/Firebase.svg'
 import Javascript from '../assets/Javascript.svg'
 import react from '../assets/react.svg'
 import bootstrap from '../assets/bootstrap.svg'
@@ -20,23 +20,24 @@ export default function Skill() {
   anime({
     targets: '.staggering-grid-demo .el',
     scale: [
-      {value: .1, easing: 'easeOutSine', duration: 500},
+      {value: 1, easing: 'easeOutSine', duration: 500},
       {value: 1, easing: 'easeInOutQuad', duration: 1200}
     ],
-    delay: anime.stagger(200, {grid: [1,0], from: 'center'}) 
+    delay: anime.stagger(200, {grid: [2,2], from: 'center'}) 
   });
 
 
   return (
-    <div id='skill-id'>
-      <div className='flex justify-center pt-10 sm:flex sm:text-center'>
+    <div id='skill-id' className=''>
+      <div className='flex justify-center pt-20 sm:flex sm:text-center'>
       <h1 className='text-black font-bold text-xl tracking-widest border-solid border-4 border-black px-12 py-1'>SKILLS</h1>
     </div>
     <div className='flex pb-5'>
       <p className='text-xl tracking-widest font-bold pl-10'>USING NOW:</p>
     </div>
 
-    <div className='staggering-grid-demo grid grid-rows-2 grid-cols-4 gap-10 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-col-1'>
+  
+    <div className=' staggering-grid-demo grid grid-rows-2 grid-cols-4 gap-10 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-col-1'>
       <div className='el html-class flex flex-col'>
         <img src={html} alt="Html5" className=' h-20' />
         <p className='text-center pt-3'>HTML5</p>
@@ -62,12 +63,7 @@ export default function Skill() {
          <p className='text-center pt-3'>TAILWIND CSS</p>
       </div>
 
-      <div className='el flex flex-col'>
-        <img className='h-20' src={figma} alt="" /> 
-        <p className='text-center pt-3'>FIGMA</p>
-      </div>
-
-      <div className='el flex flex-col'>
+      <div className='el flex flex-col'> 
         <img className='h-20' src={bootstrap} alt="" />
          <p className='text-center pt-3'>BOOTSTRAP</p>
       </div>
@@ -76,6 +72,12 @@ export default function Skill() {
         <img className='h-20' src={flutter} alt="" />
          <p className='text-center pt-3'>FLUTTER</p>
       </div>
+
+      <div className='el flex flex-col'>
+        <img className='h-20' src={firebase} alt="" /> 
+        <p className='text-center pt-3'>FIREBASE</p>
+      </div>
+      
      </div>
 
 
